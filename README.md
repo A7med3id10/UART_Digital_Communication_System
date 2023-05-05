@@ -5,7 +5,7 @@ This project is an implementation of a Low Power Configurable Multi Clock Digita
 It is responsible of receiving commands through UART receiver to do different system functions as register file reading/writing or doing some processing using ALU block and send result using 4 bytes frame through UART transmitter communication protocol.
 
 ## Block Diagram
-![Block Diagram](image.png)
+![Block Diagram](img/Block_Diagram.png)
 
 ## System Specifications
 - Reference clock (REF_CLK) is 50 MHz
@@ -31,7 +31,7 @@ It is responsible of receiving commands through UART receiver to do different sy
 4. ALU Operation command with No operand (2 frames)
 `ALU_FUN ALU_OPER_W_NOP_CMD(0xDD)`
 ### ALU Operations
-![ALU Operations](ALU_FUN.png)
+![ALU Operations](img/ALU_FUN.png)
 
 ## Conclusion
 

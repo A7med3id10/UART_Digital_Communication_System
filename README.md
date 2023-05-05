@@ -1,7 +1,4 @@
-
-
-
-#    UART_Digital_Communication_System
+# UART_Digital_Communication_System
 
 ## Introduction
 This project is an implementation of a Low Power Configurable Multi Clock Digital System that uses Universal Asynchronous Receiver-Transmitter (UART) in Verilog. 
@@ -25,13 +22,13 @@ It is responsible of receiving commands through UART receiver to do different sy
 -    Register File Addresses reserved for configurations and ALU operands (From 0x0 to 0x3)
 
 ## Supported Commands
-1- Register File Write command (3 frames)
+1. Register File Write command (3 frames)
 `RF_Wr_Data RF_Wr_Addr RF_Wr_CMD(0xAA)`
-2- Register File Read command (2 frames)
+2. Register File Read command (2 frames)
 `RF_Rd_Addr RF_Rd_CMD(0xBB)`
-3- ALU Operation command with operand (4 frames)
+3. ALU Operation command with operand (4 frames)
 `Operand_A  Operand_B  ALU_FUN ALU_OPER_W_OP_CMD(0xCC)`
-4- ALU Operation command with No operand (2 frames)
+4. ALU Operation command with No operand (2 frames)
 `ALU_FUN ALU_OPER_W_NOP_CMD(0xDD)`
 ### ALU Operations
 ![ALU Operations](ALU_FUN.png)

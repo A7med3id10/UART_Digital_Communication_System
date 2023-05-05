@@ -33,6 +33,12 @@ It is responsible of receiving commands through UART receiver to do different sy
 ### ALU Operations
 ![ALU Operations](img/ALU_FUN.png)
 
-## Conclusion
+## Backend
+### RTL Synthesis
+I uploaded TCL script to automate Synposys Design Compiler and constrains file to check setup/hold violations
+### Formal Verification
+TCL script to automate Synposys Formality to verify functional equivalance between RTL and netlist, 
+It must be run after Synthesis, DFT, and PnR
+### Design For Testability
+TCL script to insert dft and DRCs and test coverage
 
-In this project, I have designed and implemented a UART using Verilog. This communication interface is commonly used in microcontroller applications and can be used as a starting point for future projects.
